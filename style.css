@@ -1,0 +1,7 @@
+body {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    /* Find a custom font and add it here */
+    font-family: Poppins, sans-serif;
+}
