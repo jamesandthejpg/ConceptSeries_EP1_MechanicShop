@@ -1,7 +1,46 @@
+/* Global Media Queries */
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
+
+
+/* Styling */
 body {
     margin: 0;
     border: 0;
     box-sizing: border-box;
     /* Find a custom font and add it here */
     font-family: Poppins, sans-serif;
+}
+
+
+
+/* Header section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 99%;
+}
+
+#logo {
+    width: 80px;
+    height: 80px;
+    margin: 15px 0 0 20px;
+}
+
+/* Header Navigation */
+.nav {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.nav a {
+    color: black;
+    text-decoration: none;
 }
