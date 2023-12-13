@@ -23,26 +23,32 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 99%;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(57, 57, 57, 0.896);
+    z-index: 1000;
 }
 
 #logo {
     width: 80px;
     height: 80px;
-    margin: 15px 0 0 20px;
+    margin: 0 0 0 20px;
 }
+
+
 
 /* Header Navigation */
 .nav {
     display: flex;
-    gap: 10px;
+    gap: 50px;
     list-style-type: none;
-    /* margin-right: 20px; */
+    margin-right: 20px;
 }
 
 .nav a {
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
+    letter-spacing: 1.5px;
 }
 
 
@@ -54,14 +60,12 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-
     margin: 0 auto;
     width: 100%;
     height: 100vh;
 }
 
-.title, .info {
+.siteTitle, .siteInfo {
     text-align: center;
     width: 30%;
     margin: 10px 0;
@@ -75,66 +79,60 @@ body {
     width: 100%;
 }
 
-h2 {
+.servicesSection h2 {
     text-align: center;
 }
 
-.servicesContainer {
+.serviceContainer {
     display: flex;
     justify-content: space-between;
-    margin: 0 50px;
-    gap: 10px;
+    margin: 0 75px;
+}
+
+.serviceContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .service {
     width: 350px;
     height: 350px;
     position: relative;
-    overflow: hidden;
 }
-
-.servicesContainer img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.test {
-    position: absolute;
-    color: white;
-    z-index: 1;
-}
-
 
 
 
 
 /* Contact & Location section */
 .contactSection {
-    margin: 0 auto;
-    margin-top: 20px;
-    width: 60%;
+    border: 1px solid black;
+    height: 50vh;
+    width: 100vw;
     display: flex;
-    justify-content: space-between;
-    gap: 50px;
+    margin: 30px auto;
 }
 
-.contactForm form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0 50px;
-}
-
-.contactForm input, .contactForm textarea, .contactForm h3 {}
-
-
-.location {
+.contactContainer, .locationContainer {
     border: 1px solid black;
     width: 100%;
-    margin: 0 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
+.contactContainerInner, .locationContainerInner {
+    border: 1px solid black;
+    width: 80%;
+    height: 80%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
 
 
 /* Footer section */
