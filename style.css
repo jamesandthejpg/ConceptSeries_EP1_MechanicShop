@@ -134,6 +134,11 @@ textarea {
     resize: none;
 }
 
+
+.locationBox {
+    text-align: center;
+}
+
 .submitBTN {
     background-color: aqua;
     margin-bottom: 20px;
