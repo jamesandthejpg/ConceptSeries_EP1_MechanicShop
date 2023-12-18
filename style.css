@@ -103,7 +103,48 @@ body {
 
 
 /* Contact & Location section */
+.infoContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 20px;
+}
 
+.contactContainer, .locationContainer {
+    border: 1px solid red;
+    width: 50%;
+}
+
+.contactContainer h3, .locationContainer h3 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin: auto 25%;
+    width: 50%;
+}
+
+.formContainer, .locationBox {}
+
+textarea {
+    resize: none;
+}
+
+
+.locationBox {
+    text-align: center;
+}
+
+.submitBTN {
+    background-color: aqua;
+    margin-bottom: 20px;
+    width: 200px;
+    align-self: center;
+}
 
 /* Footer section */
 .footerInfo p {
